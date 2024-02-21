@@ -12,19 +12,131 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/functions.test.ts
-PASS src/text.test.tsx
+PASS src/arrays.test.ts
+  ● Console
+
+    console.log
+      [ 1, 2, 3 ]
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [ 1, 2, 3 ] 6 -1
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [ 1, 2, 3, 6 ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
+    console.log
+      [ 100, 300, 200 ]
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [ 100, 300, 200 ] 600 -1
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [ 100, 300, 200, 600 ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
+    console.log
+      [ 5 ]
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [ 5 ] 5 -1
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [ 5, 5 ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
+    console.log
+      []
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [] 0 -1
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [ 0 ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
+    console.log
+      [ 100, 199, 1, -5, 7, 3 ]
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [ 100, 199, 1, -5, 7, 3 ] 300 3
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [
+        100, 199, 1, -5,
+        300,   7, 3
+      ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
+    console.log
+      [ -100, -200, 100, 200 ]
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [ -100, -200, 100, 200 ] 0 0
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [ -100, 0, -200, 100, 200 ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
+    console.log
+      [ 199, 1, 550, 50, 200 ]
+
+      at injectPositive (src/arrays.ts:113:13)
+
+    console.log
+      [ 199, 1, 550, 50, 200 ] 1000 -1
+
+      at injectPositive (src/arrays.ts:118:13)
+
+    console.log
+      [ 199, 1, 550, 50, 200, 1000 ]
+
+      at injectPositive (src/arrays.ts:122:13)
+
 PASS src/HtmlCss.test.tsx
+PASS src/text.test.tsx
 PASS src/App.test.tsx
 --------------|---------|----------|---------|---------|-------------------
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------|---------|----------|---------|---------|-------------------
 All files     |     100 |      100 |     100 |     100 |                   
  App.tsx      |     100 |      100 |     100 |     100 |                   
+ arrays.ts    |     100 |      100 |     100 |     100 |                   
  functions.ts |     100 |      100 |     100 |     100 |                   
 --------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 4 passed, 4 total
-Tests:       14 passed, 14 total
+Test Suites: 5 passed, 5 total
+Tests:       23 passed, 23 total
 Snapshots:   0 total
-Time:        2.885 s
+Time:        3.068 s
 Ran all test suites.
