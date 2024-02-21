@@ -110,15 +110,12 @@ export function injectPositive(values: number[]): number[] {
     let neg = false;
     const newValues: number[] = [...values];
     const firstNeg = newValues.findIndex((n: number): boolean => n < 0);
-    console.log(newValues);
     const sum = newValues.reduce((total: number, curr: number) => {
         neg = curr < 0 || neg;
         return total + (neg ? 0 : curr);
     }, 0);
-    console.log(newValues, sum, firstNeg);
     firstNeg === -1
         ? newValues.push(sum)
         : newValues.splice(firstNeg + 1, 0, sum);
-    console.log(newValues);
     return newValues;
 }
