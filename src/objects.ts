@@ -73,18 +73,18 @@ export function toShortForm(question: Question): string {
  * ------------------------------
  * Check the unit tests for more examples of what this looks like!
  */
+// prettier-ignore
+// prittier has an issue with the following lines in the function, and ends up fighting with eslint
 export function toMarkdown(question: Question): string {
-    // prittier has an issue with the following line, and ends up fighting with eslint
-    // do not expand!
-    // eslint-disable-next-line prettier/prettier
-    const mark = `# ${question.name}\n${question.body}\n${
-        question.type === "multiple_choice_question"
-            ? question.options.reduce(
-                  (ps: string, cv: string) => ps + `- ${cv}\n`,
-                  ""
-              )
-            : ""
-    }`;
+    // do not expand!, 
+    const mark = `# ${question.name}\n
+    ${question.body}\n
+    ${question.type === "multiple_choice_question" ? 
+        question.options.reduce(
+            (ps: string, cv: string) => ps + `- ${cv}\n`
+            ,"")
+        : 
+        ""}`;
     return mark.slice(0, mark.length - 1);
 }
 
