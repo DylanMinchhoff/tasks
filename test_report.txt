@@ -11,31 +11,7 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-FAIL src/objects.test.ts
-  ● Testing the object functions › Testing the toMarkdown function
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 4
-
-      # Addition
-    - What is 2+2?
-    +
-    +     What is 2+2?
-    +
-    +
-
-      116 |     // toMarkdown
-      117 |     test("Testing the toMarkdown function", () => {
-    > 118 |         expect(toMarkdown(ADDITION_QUESTION)).toEqual(`# Addition
-          |                                               ^
-      119 | What is 2+2?`);
-      120 |         expect(toMarkdown(LETTER_QUESTION)).toEqual(`# Letters
-      121 | What is the last letter of the English alphabet?`);
-
-      at Object.<anonymous> (src/objects.test.ts:118:47)
-
+PASS src/objects.test.ts
 PASS src/arrays.test.ts
 PASS src/functions.test.ts
 PASS src/HtmlCss.test.tsx
@@ -44,18 +20,18 @@ PASS src/App.test.tsx
 ----------------|---------|----------|---------|---------|-------------------
 File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------|---------|----------|---------|---------|-------------------
-All files       |    98.3 |    97.29 |   97.36 |   98.11 |                   
- src            |    98.3 |    97.29 |   97.36 |   98.11 |                   
+All files       |     100 |      100 |     100 |     100 |                   
+ src            |     100 |      100 |     100 |     100 |                   
   App.tsx       |     100 |      100 |     100 |     100 |                   
   arrays.ts     |     100 |      100 |     100 |     100 |                   
   functions.ts  |     100 |      100 |     100 |     100 |                   
-  objects.ts    |    92.3 |       75 |    90.9 |    92.3 | 84                
+  objects.ts    |     100 |      100 |     100 |     100 |                   
  src/interfaces |       0 |        0 |       0 |       0 |                   
   question.ts   |       0 |        0 |       0 |       0 |                   
 ----------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 1 failed, 5 passed, 6 total
-Tests:       1 failed, 32 passed, 33 total
+Test Suites: 6 passed, 6 total
+Tests:       33 passed, 33 total
 Snapshots:   0 total
-Time:        3.759 s
+Time:        3.848 s
 Ran all test suites.
